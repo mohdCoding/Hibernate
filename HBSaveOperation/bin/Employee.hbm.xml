@@ -1,0 +1,9 @@
+<hibernate-mapping>
+
+<class name="in.ineuron.model.Employee" table="empTab">
+
+  <id name="empId" column="eid"/>
+  <property name="empName" column="ename"/>
+  <property name="empSal" column="esal"/>
+</class>
+</hibernate-mapping>

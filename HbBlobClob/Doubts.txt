@@ -1,0 +1,15 @@
+while using response.sendRedirect("./test2"); method is the same request and response object will be given to the test2 servlet?
+
+in FirstServlet i set this :: request.setAttribute("name", "name");
+in SecondServlet i get this :: request.getAttribute("name"); giving null
+but when printing the hashcode of printwriter in first and second servlet both are same
+that means response is given to second servlet but not request am i right?
+
+
+========================================================================
+2/ 
+RequestDispatcher Conclusion points ::
+---------------------------------------
+  *) if we forward req, res to another servlet from our servlet response will be flushed request will  be same without change
+
+  *) if we forward req, res to an html file from there if request go to another servlet that same request obj and response obj will be given 
